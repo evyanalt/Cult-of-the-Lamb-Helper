@@ -1,0 +1,137 @@
+html {
+    font-family: "Open Sans", sans-serif;
+    background-image: url("Resources/bg_empty.png");
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    text-align: center;
+}
+
+/* Small icons */
+.icon {
+    width: 20px;
+    vertical-align: middle;
+}
+
+/* Buttons */
+.button {
+    border: 3px solid #9A0002;
+    border-radius: 5px;
+    background-color: #9A0002;
+    color: #EFE6DE;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 8px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.crown-selector {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+    background: rgba(20, 20, 20, 0);
+    border-radius: 12px; /* 🔥 THIS fixes your brain issue */
+    margin: 10px;
+}
+
+/* All crowns */
+.crown-selector img {
+    width: 45px;
+    padding: 6px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+/* Hover */
+.crown-selector img:hover {
+    transform: scale(1.15);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Fix weird crowns */
+.crown-selector img.special {
+    object-fit: contain;
+    filter: brightness(1.1) contrast(1.1);
+}
+/* Sections */
+.section {
+    border: solid 2px #333;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Section header (clickable) */
+.section-header {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Collapsible content */
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 10px;
+}
+
+/* Expanded */
+.section.active .section-content {
+    max-height: 1000px;
+    padding: 10px;
+}
+
+/* Images */
+.character-img {
+    max-width: 120px;
+    display: block;
+    margin: 10px 0;
+}
+/* Header layout */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+/* Crown icon in header */
+.crown-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Bishop preview */
+.bishop-preview {
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    padding: 5px;
+}
+#green .section-header { box-shadow: 0 0 8px rgba(0,255,0,0.3); }
+#yellow .section-header { box-shadow: 0 0 8px rgba(255,255,0,0.3); }
+#blue .section-header { box-shadow: 0 0 8px rgba(0,150,255,0.3); }
+#purple .section-header { box-shadow: 0 0 8px rgba(180,0,255,0.3); }
+#red .section-header { box-shadow: 0 0 8px rgba(255,0,0,0.3); }
+#cyan .section-header { box-shadow: 0 0 8px rgba(0,255,255,0.3); }
