@@ -9,6 +9,7 @@ html {
 /* Header */
 .header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Small icons */
@@ -25,9 +26,10 @@ html {
     color: #EFE6DE;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 6px 10px;
     display: inline-block;
-    margin-top: 5px;
+
+    margin-top: 10px;   /* space above */
 }
 .crown-selector {
     position: sticky;
@@ -65,8 +67,16 @@ html {
 .section {
     border: solid 2px #333;
     border-radius: 8px;
+    padding: 10px;
     margin: 20px;
-    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.section p {
+    margin: 10px 0;
+}
+
+.section h2 {
+    margin-bottom: 10px;
 }
 
 /* Section header (clickable) */
@@ -76,6 +86,7 @@ html {
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: none;
 }
 
 /* Collapsible content */
@@ -129,9 +140,13 @@ html {
     background: rgba(0,0,0,0.4);
     padding: 5px;
 }
-#green .section-header { box-shadow: 0 0 8px rgba(0,255,0,0.3); }
-#yellow .section-header { box-shadow: 0 0 8px rgba(255,255,0,0.3); }
-#blue .section-header { box-shadow: 0 0 8px rgba(0,150,255,0.3); }
-#purple .section-header { box-shadow: 0 0 8px rgba(180,0,255,0.3); }
-#red .section-header { box-shadow: 0 0 8px rgba(255,0,0,0.3); }
-#cyan .section-header { box-shadow: 0 0 8px rgba(0,255,255,0.3); }
+.crowns-page .section {
+    padding: 0;
+}
+
+#green.section { box-shadow: 0 0 10px rgba(0,255,0,0.3); }
+#yellow.section { box-shadow: 0 0 10px rgba(255,255,0,0.3); }
+#blue.section { box-shadow: 0 0 10px rgba(0,150,255,0.3); }
+#purple.section { box-shadow: 0 0 10px rgba(180,0,255,0.3); }
+#red.section { box-shadow: 0 0 10px rgba(255,0,0,0.3); }
+#cyan.section { box-shadow: 0 0 10px rgba(0,255,255,0.3); }
