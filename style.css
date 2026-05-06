@@ -11,6 +11,10 @@ html {
     text-align: center;
     margin-bottom: 20px;
 }
+.header h1 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
 
 /* Small icons */
 .icon {
@@ -150,3 +154,32 @@ html {
 #purple.section { box-shadow: 0 0 10px rgba(180,0,255,0.3); }
 #red.section { box-shadow: 0 0 10px rgba(255,0,0,0.3); }
 #cyan.section { box-shadow: 0 0 10px rgba(0,255,255,0.3); }
+
+.dice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: rgba(30, 30, 30, 0.85);
+    color: #EFE6DE;
+}
+
+.dice-table th,
+.dice-table td {
+    border: 1px solid #444;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.dice-table th {
+    background: rgba(154, 0, 2, 0.85);
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+
+.dice-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.dice-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
