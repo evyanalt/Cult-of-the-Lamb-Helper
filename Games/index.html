@@ -12,7 +12,7 @@
         <p>How the minigames work and tips for them.</p>
     </div>
     <div class="section">
-        <h2><img class="icon" src="../Resources/knucklebones_arena.webp"> Knucklebones</h2>
+        <h2><img class="icon" src="../Resources/Games/knucklebones_arena.webp"> Knucklebones</h2>
         <p>Knucklebones is a dice game of risk and reward, unlocked after visiting Ratau at the Lonely Shack or by building a Knucklebones Arena at your cult.</p>
         <h3>How to Play</h3>
         <ul>
@@ -39,10 +39,450 @@
                 <tr><td>6</td><td>6</td><td>24</td><td>54</td></tr>
             </tbody>
         </table>
+        <ul>
+            <li>When a player places a dice, all dice of the same value in the corresponding column of the opponent's board gets destroyed. Players can use this mechanic to destroy their opponent's high-scoring combos.</li>
+            <li>The game ends when either player completely fills up their 3x3 board. The player with the higher score wins.</li>
+        </ul>
+        <h3>Strategies</h3>
+        <ul>
+            <li>Knucklebones is largely a game of chance, so don't expect to win every game even with an optimal strategy.</li>
+            <li>Combos are generally much more worth pursuing than die value: two 2s are worth more than one 6, and three 3s are worth more than two 6s. As such, it is generally not worth destroying single dice (even if high valued), but worth destroying doubles and of course triples (aside from combos made from 1-dice). Work on your own combos instead.</li>
+            <li>Focus on building strong combos in a column where the opponent has already filled up all or most their slots, as they won't be able to destroy your dice.</li>
+            <li>If an opponent's column is already filled up, it's better to make combos in that column, since they can't take away your dice, rather than take away one or more of their dice and delete a relatively safe combo breeding ground.</li>
+            <li>Pay attention to how close the game is to ending. When most of the board is empty, you may want to plan long-term building combos. When the boards are almost filled up, you may want to focus on sabotaging your opponent to get that last minute overtake or to delay the game to get more chances at finishing your own combos.</li>
+            <li>If you place dice completely randomly (so every permutation of 3 dice is equally likely for each column), the mean score for a column is 15.25 while the median score is 12. This gives a benchmark for what score threshold you should try to surpass, or to keep your opponent below. </li>
+            <li>There are 8C3 = 56 unique dice combinations for a column, with the mean score being 16.5 and the median score being 13. The full table of combinations is shown below:</li>
+        </ul>
+        <details>
+            <summary><strong>Full Combinations Table (Click to expand)</strong></summary>
+            <table class="dice-table">
+                <thead>
+                    <tr>
+                        <th>Die 1</th>
+                        <th>Die 2</th>
+                        <th>Die 3</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>1</td><td>1</td><td>9</td></tr>
+                    <tr><td>1</td><td>1</td><td>2</td><td>6</td></tr>
+                    <tr><td>1</td><td>1</td><td>3</td><td>7</td></tr>
+                    <tr><td>1</td><td>1</td><td>4</td><td>8</td></tr>
+                    <tr><td>1</td><td>1</td><td>5</td><td>9</td></tr>
+                    <tr><td>1</td><td>1</td><td>6</td><td>10</td></tr>
+                    <tr><td>1</td><td>2</td><td>2</td><td>9</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>6</td></tr>
+                    <tr><td>1</td><td>2</td><td>4</td><td>7</td></tr>
+                    <tr><td>1</td><td>2</td><td>5</td><td>8</td></tr>
+                    <tr><td>1</td><td>2</td><td>6</td><td>9</td></tr>
+                    <tr><td>1</td><td>3</td><td>3</td><td>13</td></tr>
+                    <tr><td>1</td><td>3</td><td>4</td><td>8</td></tr>
+                    <tr><td>1</td><td>3</td><td>5</td><td>9</td></tr>
+                    <tr><td>1</td><td>3</td><td>6</td><td>10</td></tr>
+                    <tr><td>1</td><td>4</td><td>4</td><td>17</td></tr>
+                    <tr><td>1</td><td>4</td><td>5</td><td>10</td></tr>
+                    <tr><td>1</td><td>4</td><td>6</td><td>11</td></tr>
+                    <tr><td>1</td><td>5</td><td>5</td><td>21</td></tr>
+                    <tr><td>1</td><td>5</td><td>6</td><td>12</td></tr>
+                    <tr><td>1</td><td>6</td><td>6</td><td>25</td></tr>
+                    <tr><td>2</td><td>2</td><td>2</td><td>18</td></tr>
+                    <tr><td>2</td><td>2</td><td>3</td><td>11</td></tr>
+                    <tr><td>2</td><td>2</td><td>4</td><td>12</td></tr>
+                    <tr><td>2</td><td>2</td><td>5</td><td>13</td></tr>
+                    <tr><td>2</td><td>2</td><td>6</td><td>14</td></tr>
+                    <tr><td>2</td><td>3</td><td>3</td><td>14</td></tr>
+                    <tr><td>2</td><td>3</td><td>4</td><td>9</td></tr>
+                    <tr><td>2</td><td>3</td><td>5</td><td>10</td></tr>
+                    <tr><td>2</td><td>3</td><td>6</td><td>11</td></tr>
+                    <tr><td>2</td><td>4</td><td>4</td><td>18</td></tr>
+                    <tr><td>2</td><td>4</td><td>5</td><td>11</td></tr>
+                    <tr><td>2</td><td>4</td><td>6</td><td>12</td></tr>
+                    <tr><td>2</td><td>5</td><td>5</td><td>22</td></tr>
+                    <tr><td>2</td><td>5</td><td>6</td><td>13</td></tr>
+                    <tr><td>2</td><td>6</td><td>6</td><td>26</td></tr>
+                    <tr><td>3</td><td>3</td><td>3</td><td>27</td></tr>
+                    <tr><td>3</td><td>3</td><td>4</td><td>16</td></tr>
+                    <tr><td>3</td><td>3</td><td>5</td><td>17</td></tr>
+                    <tr><td>3</td><td>3</td><td>6</td><td>18</td></tr>
+                    <tr><td>3</td><td>4</td><td>4</td><td>19</td></tr>
+                    <tr><td>3</td><td>4</td><td>5</td><td>12</td></tr>
+                    <tr><td>3</td><td>4</td><td>6</td><td>13</td></tr>
+                    <tr><td>3</td><td>5</td><td>5</td><td>23</td></tr>
+                    <tr><td>3</td><td>5</td><td>6</td><td>14</td></tr>
+                    <tr><td>3</td><td>6</td><td>6</td><td>27</td></tr>
+                    <tr><td>4</td><td>4</td><td>4</td><td>36</td></tr>
+                    <tr><td>4</td><td>4</td><td>5</td><td>21</td></tr>
+                    <tr><td>4</td><td>4</td><td>6</td><td>22</td></tr>
+                    <tr><td>4</td><td>5</td><td>5</td><td>24</td></tr>
+                    <tr><td>4</td><td>5</td><td>6</td><td>15</td></tr>
+                    <tr><td>4</td><td>6</td><td>6</td><td>28</td></tr>
+                    <tr><td>5</td><td>5</td><td>5</td><td>45</td></tr>
+                    <tr><td>5</td><td>5</td><td>6</td><td>26</td></tr>
+                    <tr><td>5</td><td>6</td><td>6</td><td>29</td></tr>
+                    <tr><td>6</td><td>6</td><td>6</td><td>54</td></tr>
+                </tbody>
+            </table>
+        </details>
+        
     </div>
     <div class="section">
-        <h2><img class="icon" src="../Resources/Flocakde_Rule.webp"> <img class="icon" src="../Resources/Winter_Snowflake.png"> Flockade</h2>
+        <h2><img class="icon" src="../Resources/Games/Flocakde_Rule.webp"> <img class="icon" src="../Resources/assets/Winter_Snowflake.png"> Flockade</h2>
         <p>This game is a woolhaven exclusive game. Flockade is a game that is similar to Rock-Paper-Scissors with strategic twists of having Shield-Scribe-Sword-Shepherd. This game can be unlocked fixing Aniel's home. </p>
+        <h3>Gameplay</h3>
+        <ul>
+            <li>The game is played by placing your pieces in 2x2 boards, 4 for each player, 8 in total.</li>
+            <li>Players take turn placing their pieces, often with the opponents going first.</li>
+            <li>Each player gets 3 pieces to choose from that changes each turn.</li>
+            <li>The pieces consist of Shield, Scribe, Sword and Shepherd. Shield defeats Sword, Scribe defeats Shield, Sword defeats Scribe.</li>
+            <li>All Shepherd pieces can be defeated by any other piece.</li>
+            <li>Some Pieces are "blessed". These pieces can alter the route of the game by changing positions, earning extra points or sabotaging the opponent.</li>
+            <li>The effects of the pieces happen depending on their sequence number. In player perspective the sequence goes; 1 right top, 2 right bottom, 3 left top, 4 left bottom.</li>
+        </ul>
+        <h3>Pieces</h3>
+        <p>There are 36 pieces and 4 categories of pieces; Sword, Shield, Scribe and Shepherd. Shepherd pieces can only be obtained by completing Aniel's quests against the 6 Flockade players. Swords, Shields and Scribes each have 10 pieces, 30 in total being:</p>
+        <ul>
+            <li>Default, Cursed, Fallen, Just (Justice), Risen, Marked, Prize, Mercenary, Scout and Trickster.</li>
+        </ul>
+        <p>The pieces themselves represent the lambs that used to exist and other followers of Yngya.</p>
+        <h3>Piece Reference</h3>
+        <details>
+            <summary><strong>Flockade piece list and unlocks (click to expand)</strong></summary>
+            <table class="piece-table">
+                <thead>
+                    <tr>
+                        <th>Piece</th>
+                        <th>Description</th>
+                        <th>Wins Against</th>
+                        <th>Defeated By</th>
+                        <th>Lore Text</th>
+                        <th>Unlock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword.webp" alt="Sword"><span>Sword</span></td>
+                        <td>Mutton Sword</td>
+                        <td>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shield</td>
+                        <td>—</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Justice.webp" alt="Just Sword"><span>Just Sword</span></td>
+                        <td>Just Sword</td>
+                        <td>Trickster pieces</td>
+                        <td>—</td>
+                        <td>Bravest of lamb warriors.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield.webp" alt="Shield"><span>Shield</span></td>
+                        <td>Mutton Shield</td>
+                        <td>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes</td>
+                        <td>—</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Justice.webp" alt="Just Shield"><span>Just Shield</span></td>
+                        <td>Just Shield</td>
+                        <td>Trickster pieces</td>
+                        <td>—</td>
+                        <td>A defender of lambkind.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe.webp" alt="Scribe"><span>Scribe</span></td>
+                        <td>Mutton Scribe</td>
+                        <td>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords</td>
+                        <td>—</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Justice.webp" alt="Just Scribe"><span>Just Scribe</span></td>
+                        <td>Just Scribe</td>
+                        <td>Trickster pieces</td>
+                        <td>—</td>
+                        <td>Cleric of the order of lamb.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Justice.webp" alt="Sword Justice"><span>Sword Justice</span></td>
+                        <td>Usiu, Just Sword</td>
+                        <td>If duelling against another sword, ties are won.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Shields<br>Trickster pieces</td>
+                        <td>Victor of the Ewefall skirmish.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Justice.webp" alt="Shield Justice"><span>Shield Justice</span></td>
+                        <td>Mihr, Just Shield</td>
+                        <td>If duelling against another shield, ties are won.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shields<br>Scribes<br>Trickster pieces</td>
+                        <td>Defender of justice.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Justice.webp" alt="Scribe Justice"><span>Scribe Justice</span></td>
+                        <td>Tartys, Just Scribe</td>
+                        <td>If duelling against another scribe, ties are won.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Swords<br>Trickster pieces</td>
+                        <td>Knowledge keeper of culture, custom, and law.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Fallen.webp" alt="Sword Fallen"><span>Sword Fallen</span></td>
+                        <td>Jorpiel, Fallen Sword</td>
+                        <td>When a duel phase begins, all pieces in the same column move down one square.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shields<br>Just Swords<br>Trickster pieces</td>
+                        <td>Upon their sword they fell, rather than surrender.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Fallen.webp" alt="Shield Fallen"><span>Shield Fallen</span></td>
+                        <td>Kelsen, Fallen Shield</td>
+                        <td>When a duel phase begins, all pieces in the same column move down one square.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Just Shield<br>Trickster pieces</td>
+                        <td>The last defender, the lost victor.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Fallen.webp" alt="Scribe Fallen"><span>Scribe Fallen</span></td>
+                        <td>Aniel, Fallen Scribe</td>
+                        <td>When a duel phase begins, all pieces in the same column move down one square.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Just Scribe<br>Trickster pieces</td>
+                        <td>Recorder of history and all its repetitions.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Risen.webp" alt="Sword Risen"><span>Sword Risen</span></td>
+                        <td>Douma, Risen Sword</td>
+                        <td>When a duel phase begins, all pieces in the same column move up one square.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shields<br>Just Swords<br>Trickster pieces</td>
+                        <td>Her bleats signalled the charge at Last Hoof.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Risen.webp" alt="Shield Risen"><span>Shield Risen</span></td>
+                        <td>Aidonius, Risen Shield</td>
+                        <td>When a duel phase begins, all pieces in the same column move up one square.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Just Shield<br>Trickster pieces</td>
+                        <td>The first to press forward against Tooth and Claw.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Risen.webp" alt="Scribe Risen"><span>Scribe Risen</span></td>
+                        <td>Narayus, Risen Scribe</td>
+                        <td>When a duel phase begins, all pieces in the same column move up one square.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Just Scribe<br>Trickster pieces</td>
+                        <td>Writer of the great Comlambments.</td>
+                        <td>Unlocked by default</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Prize.webp" alt="Sword Prize"><span>Sword Prize</span></td>
+                        <td>Madan, Prize Sword</td>
+                        <td>If this piece wins a duel, 2 points are awarded instead of 1.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shields<br>Just Swords<br>Trickster pieces</td>
+                        <td>One of lambkind's greatest champions.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Prize.webp" alt="Shield Prize"><span>Shield Prize</span></td>
+                        <td>Domiel, Prize Shield</td>
+                        <td>If this piece wins a duel, 2 points are awarded instead of 1.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Just Shield<br>Trickster pieces</td>
+                        <td>Protector of grand riches.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Prize.webp" alt="Scribe Prize"><span>Scribe Prize</span></td>
+                        <td>Valiuk, Prize Scribe</td>
+                        <td>If this piece wins a duel, 2 points are awarded instead of 1.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Just Scribe<br>Trickster pieces</td>
+                        <td>Tallier of the spoils of war.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Cursed.webp" alt="Sword Cursed"><span>Sword Cursed</span></td>
+                        <td>Lornileth, Rotten Sword</td>
+                        <td>When played, blessings on the opposite row are nullified.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Just Swords<br>Shields<br>Trickster pieces</td>
+                        <td>Dealt the killing blow against Tooth and Claw.</td>
+                        <td>Unlocked by defeating Rami in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Cursed.webp" alt="Shield Cursed"><span>Shield Cursed</span></td>
+                        <td>Elyon, Rotten Shield</td>
+                        <td>When played, blessings on the opposite row are nullified.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Just Shields<br>Scribes</td>
+                        <td>Hero of the Grasslands.</td>
+                        <td>Unlocked by defeating Baraq in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Cursed.webp" alt="Scribe Cursed"><span>Scribe Cursed</span></td>
+                        <td>Antons, Rotten Scribe</td>
+                        <td>When played, blessings on the opposite row are nullified.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Just Scribes<br>Swords</td>
+                        <td>Decipherer of ancient scrolls and tombs.</td>
+                        <td>Unlocked by defeating Chazaq in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Scout.webp" alt="Sword Scout"><span>Sword Scout</span></td>
+                        <td>Phine, Scout Sword</td>
+                        <td>This piece must replace an opponents piece if one is available, otherwise there is no effect.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shield<br>Just Sword<br>Trickster pieces</td>
+                        <td>Quickest, quietest of solider.</td>
+                        <td>Unlocked by defeating Sariel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Scout.webp" alt="Shield Scout"><span>Shield Scout</span></td>
+                        <td>Icirath, Scout Shield</td>
+                        <td>This piece must replace an opponents piece if one is available, otherwise there is no effect.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Just Shield<br>Trickster pieces</td>
+                        <td>Returned the Shepherd's Crook home.</td>
+                        <td>Unlocked by defeating Koka in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Scout.webp" alt="Scribe Scout"><span>Scribe Scout</span></td>
+                        <td>Poochan, Scout Scribe</td>
+                        <td>This piece must replace an opponents piece if one is available, otherwise there is no effect.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Just Scribe<br>Trickster pieces</td>
+                        <td>Herald of victories, of surrender, and of loss.</td>
+                        <td>Unlocked by defeating Baraq in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Mercenary.webp" alt="Sword Mercenary"><span>Sword Mercenary</span></td>
+                        <td>Carlen, Mercenary Sword</td>
+                        <td>When a duel phase begins, this piece swaps places with the piece in the sam row.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shields<br>Just Swords<br>Trickster pieces</td>
+                        <td>Renowned for sharp blade and wit.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Mercenary.webp" alt="Shield Mercenary"><span>Shield Mercenary</span></td>
+                        <td>Adriel, Mercenary Shield</td>
+                        <td>When a duel phase begins, this piece swaps places with the piece in the sam row.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Just Shield<br>Trickster pieces</td>
+                        <td>Fleet of hoof, the wind brought her home.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Mercenary.webp" alt="Scribe Mercenary"><span>Scribe Mercenary</span></td>
+                        <td>Jomazel, Mercenary Scribe</td>
+                        <td>When a duel phase begins, this piece swaps places with the piece in the sam row.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Just Scribe<br>Trickster pieces</td>
+                        <td>Fell at the battle of Lost Hoof.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Marked.webp" alt="Sword Marked"><span>Sword Marked</span></td>
+                        <td>Harriath, Marked Sword</td>
+                        <td>Marked by the wolf. If this piece wins a duel, the opponent losses 1 point.<br>Scribes<br>Shepherds<br>Trickster pieces</td>
+                        <td>Shields<br>Just Swords<br>Trickster pieces</td>
+                        <td>Marred by Claw, wounded by Tooth, they vanished.</td>
+                        <td>Unlocked by defeating Rami in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Marked.webp" alt="Shield Marked"><span>Shield Marked</span></td>
+                        <td>Januros, Marked Shield</td>
+                        <td>Marked by the wolf. If this piece wins a duel, the opponent losses 1 point.<br>Swords<br>Shepherds<br>Trickster pieces</td>
+                        <td>Scribes<br>Just Shield<br>Trickster pieces</td>
+                        <td>Stood stalwart against predators.</td>
+                        <td>Unlocked by defeating Koka in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Marked.webp" alt="Scribe Marked"><span>Scribe Marked</span></td>
+                        <td>Angoel, Marked Scribe</td>
+                        <td>Marked by the wolf. If this piece wins a duel, the opponent losses 1 point.<br>Shields<br>Shepherds<br>Trickster pieces</td>
+                        <td>Swords<br>Just Scribe<br>Trickster pieces</td>
+                        <td>Into the belly of Tooth and Claw he went.</td>
+                        <td>Unlocked by defeating Chazaq in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Sword_Trickster.webp" alt="Sword Trickster"><span>Sword Trickster</span></td>
+                        <td>Ewe, Trickster Sword</td>
+                        <td>When a duel phase begins, this piece will turn into any other piece.<br>Scribes<br>Shepherds<br>Trickster pieces<br>Shields<br>Just Swords<br>Trickster Pieces</td>
+                        <td>Rotten Shields<br>Scribes<br>Shepherds</td>
+                        <td>Ewe of the trickster flock.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shield_Trickster.webp" alt="Shield Trickster"><span>Shield Trickster</span></td>
+                        <td>Ram, Trickster Shield</td>
+                        <td>When a duel phase begins, this piece will turn into any other piece.<br>Swords<br>Shepherds<br>Trickster pieces<br>Scribes<br>Just Shield<br>Scribes<br>Just Shields<br>Trickster Pieces</td>
+                        <td>Rotten Scribes<br>Swords<br>Shepherds</td>
+                        <td>Ram of the trickster flock.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Scribe_Trickster.webp" alt="Scribe Trickster"><span>Scribe Trickster</span></td>
+                        <td>Lamb, Trickster Scribe</td>
+                        <td>When a duel phase begins, this piece will turn into any other piece.<br>Shields<br>Shepherds<br>Trickster pieces<br>Swords<br>Just Shields<br>Swords<br>Just Shields<br>Trickster Pieces</td>
+                        <td>Rotten Swords<br>Shields<br>Shepherds</td>
+                        <td>Lamb of the trickster flock.</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/The_Shepherd.webp" alt="The Shepherd"><span>The Shepherd</span></td>
+                        <td>The Shepherd</td>
+                        <td>No effect</td>
+                        <td>Draw with other Shepherds<br>Swords<br>Shields<br>Scribes</td>
+                        <td>N/A</td>
+                        <td>When a Rotten piece takes away a Shepherd's blessing.</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shepherd_Lone.webp" alt="Shepherd Lone"><span>Shepherd Lone</span></td>
+                        <td>The Lone Shepherd</td>
+                        <td>At the start of their turn, the opponent draws 1 piece instead of 3.</td>
+                        <td>Draw with other Shepherds<br>Swords<br>Shields<br>Scribes</td>
+                        <td>Shepherd, what of your flock?</td>
+                        <td>Unlocked by defeating Aniel in a game of Flockade with a bet of 1 wool</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shepherd_Wandering.webp" alt="Shepherd Wandering"><span>Shepherd Wandering</span></td>
+                        <td>The Wandering Shepherd</td>
+                        <td>Each time this piece moves, gain 2 points.</td>
+                        <td>Draw with other Shepherds<br>Swords<br>Shields<br>Scribes</td>
+                        <td>Shepherd of the Wordly Flock; we are all your Herd.</td>
+                        <td>Unlocked by defeating Baraq in a game of Flockade with a bet of 2 wool</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shepherd_Guardian.webp" alt="Shepherd Guardian"><span>Shepherd Guardian</span></td>
+                        <td>The Guardian Shepherd</td>
+                        <td>If duelling against a piece marked by the wolf, the whole round is won.<br>Marked Swords<br>Marked Shields<br>Marked Scribes</td>
+                        <td>Swords<br>Shields<br>Scribes</td>
+                        <td>By your Crook we do march.</td>
+                        <td>Unlocked by defeating Koka in a game of Flockade with a bet of 3 wool</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shepherd_Cursed.webp" alt="Shepherd Cursed"><span>Shepherd Cursed</span></td>
+                        <td>The Rotten Shepherd</td>
+                        <td>When played, all pieces on the opponents side have blessings nullified.</td>
+                        <td>Draw with other Shepherds<br>Swords<br>Shields<br>Scribes</td>
+                        <td>Purity now stained.</td>
+                        <td>Unlocked by defeating Rami in a game of Flockade with a bet of 5 wool</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shepherd_False.webp" alt="Shepherd False"><span>Shepherd False</span></td>
+                        <td>The False Shepherd</td>
+                        <td>If this piece loses a duel, 2 points are awarded.</td>
+                        <td>Draw with other Shepherds<br>Swords<br>Shields<br>Scribes</td>
+                        <td>May we know the False Shepherd when they come.</td>
+                        <td>Unlocked by defeating Chazaq in a game of Flockade with a bet of 8 wool</td>
+                    </tr>
+                    <tr>
+                        <td class="piece-cell"><img class="piece-sprite" src="../Resources/Games/Flockade/Shepherd_Golden.webp" alt="Shepherd Golden"><span>Shepherd Golden</span></td>
+                        <td>The Golden Shepherd</td>
+                        <td>All points won in duels are doubled.<br>Marked Swords<br>Marked Shields<br>Marked Scribes</td>
+                        <td>Swords<br>Shields<br>Scribes</td>
+                        <td>Guide us to Riches, of land, of lore, of herd.</td>
+                        <td>Unlocked by defeating Sariel in a game of Flockade with a bet of 10 wool</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
     </div>
     <script src="../script.js"></script>
 </body>
